@@ -647,6 +647,10 @@ h3 {
   font-weight: 800;
 }
 
+.submit-frame {
+  display: none;
+}
+
 .contact-card {
   background:
     radial-gradient(circle at 80% 20%, rgba(31, 199, 182, 0.2), transparent 14rem),
