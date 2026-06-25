@@ -43,25 +43,50 @@ if ("IntersectionObserver" in window) {
 }
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
+  contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const note = contactForm.querySelector("[data-form-note]");
     const formData = new FormData(contactForm);
+    const submitButton = contactForm.querySelector('button[type="submit"]');
     const name = formData.get("name") || "there";
-    const email = formData.get("email") || "";
-    const goal = formData.get("goal") || "Not specified";
-    const message = formData.get("message") || "No additional message provided.";
-    const subject = encodeURIComponent("New Training Inquiry");
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nTraining Goal: ${goal}\n\nMessage:\n${message}`
-    );
 
     if (note) {
-      note.textContent = `Thanks, ${name}. Opening your email app now.`;
+      note.textContent = "Sending your inquiry...";
     }
 
-    window.location.href = `mailto:Jobeywankenobifitness@gmail.com?subject=${subject}&body=${body}`;
-    contactForm.reset();
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+    }
+
+    try {
+      const response = await fetch(contactForm.action.replace("formsubmit.co/", "formsubmit.co/ajax/"), {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Unable to submit contact form.");
+      }
+
+      if (note) {
+        note.textContent = `Thanks, ${name}. Your inquiry was sent successfully.`;
+      }
+
+      contactForm.reset();
+    } catch (error) {
+      if (note) {
+        note.textContent = "Sorry, something went wrong. Please email Jobeywankenobifitness@gmail.com directly.";
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Send inquiry";
+      }
+    }
   });
 }
