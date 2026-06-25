@@ -43,14 +43,13 @@ if ("IntersectionObserver" in window) {
 }
 
 if (contactForm) {
-  contactForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
+  const note = contactForm.querySelector("[data-form-note]");
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const submitFrame = document.querySelector('iframe[name="contact-submit-frame"]');
+  let hasSubmitted = false;
 
-    const note = contactForm.querySelector("[data-form-note]");
-    const formData = new FormData(contactForm);
-    const submitButton = contactForm.querySelector('button[type="submit"]');
-    const name = formData.get("name") || "there";
-
+  contactForm.addEventListener("submit", () => {
+    hasSubmitted = true;
     if (note) {
       note.textContent = "Sending your inquiry...";
     }
@@ -59,34 +58,24 @@ if (contactForm) {
       submitButton.disabled = true;
       submitButton.textContent = "Sending...";
     }
+  });
 
-    try {
-      const response = await fetch(contactForm.action.replace("formsubmit.co/", "formsubmit.co/ajax/"), {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error("Unable to submit contact form.");
+  if (submitFrame) {
+    submitFrame.addEventListener("load", () => {
+      if (!hasSubmitted) {
+        return;
       }
 
+      hasSubmitted = false;
       if (note) {
-        note.textContent = `Thanks, ${name}. Your inquiry was sent successfully.`;
+        note.textContent = "Thanks. Your inquiry was sent successfully.";
       }
 
       contactForm.reset();
-    } catch (error) {
-      if (note) {
-        note.textContent = "Sorry, something went wrong. Please email Jobeywankenobifitness@gmail.com directly.";
-      }
-    } finally {
       if (submitButton) {
         submitButton.disabled = false;
         submitButton.textContent = "Send inquiry";
       }
-    }
-  });
+    });
+  }
 }
