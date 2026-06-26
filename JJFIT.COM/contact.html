@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Jobey Wan Kenobi Fitness to book a personal training consultation.">
+  <title>Contact | Jobey Wan Kenobi Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Jobey Wan Kenobi Fitness home">
+      <span class="brand-mark">JW</span>
+      <span>Jobey Wan Kenobi Fitness</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero section reveal">
+      <p class="eyebrow">Contact</p>
+      <h1>Ready for a stronger routine?</h1>
+      <p>Send a quick note with your goals and preferred schedule. Jobey Wan Kenobi Fitness will follow up to book a consultation.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <form class="contact-form reveal" action="/api/contact" method="POST" data-contact-form>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Training Goal
+          <select name="goal" required>
+            <option value="">Select a goal</option>
+            <option>Build strength</option>
+            <option>Lose body fat</option>
+            <option>Improve athletic performance</option>
+            <option>Move and feel better</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Tell us what you want to accomplish"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send inquiry</button>
+        <p class="form-note" data-form-note aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-card reveal">
+        <p class="eyebrow">Book directly</p>
+        <h2>Let&apos;s make your next season stronger.</h2>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:Jobeywankenobifitness@gmail.com">Jobeywankenobifitness@gmail.com</a></li>
+          <li><span>Phone</span><a href="tel:+16025550145">(480) 307-3084</a></li>
+          <li><span>Location</span><p>Phoenix, AZ and remote coaching</p></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-year></span> Jobey Wan Kenobi Fitness. Built for strength, speed, and style.</p>
+    <a href="contact.html">Start training</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
