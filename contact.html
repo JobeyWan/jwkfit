@@ -36,10 +36,7 @@
     </section>
 
     <section class="section contact-layout">
-      <form class="contact-form reveal" action="https://formsubmit.co/Jobeywankenobifitness@gmail.com" method="POST" target="contact-submit-frame" data-contact-form>
-        <input type="hidden" name="_subject" value="New Training Inquiry">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
+      <form class="contact-form reveal" action="/api/contact" method="POST" data-contact-form>
         <label>
           Name
           <input type="text" name="name" placeholder="Your name" required>
@@ -65,7 +62,6 @@
         <button class="btn btn-primary" type="submit">Send inquiry</button>
         <p class="form-note" data-form-note aria-live="polite"></p>
       </form>
-      <iframe class="submit-frame" name="contact-submit-frame" title="Contact form submission"></iframe>
 
       <aside class="contact-card reveal">
         <p class="eyebrow">Book directly</p>

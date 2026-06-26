@@ -45,11 +45,10 @@ if ("IntersectionObserver" in window) {
 if (contactForm) {
   const note = contactForm.querySelector("[data-form-note]");
   const submitButton = contactForm.querySelector('button[type="submit"]');
-  const submitFrame = document.querySelector('iframe[name="contact-submit-frame"]');
-  let hasSubmitted = false;
 
-  contactForm.addEventListener("submit", () => {
-    hasSubmitted = true;
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
     if (note) {
       note.textContent = "Sending your inquiry...";
     }
@@ -58,24 +57,37 @@ if (contactForm) {
       submitButton.disabled = true;
       submitButton.textContent = "Sending...";
     }
-  });
 
-  if (submitFrame) {
-    submitFrame.addEventListener("load", () => {
-      if (!hasSubmitted) {
-        return;
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(Object.fromEntries(new FormData(contactForm))),
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(result.message || "Unable to send inquiry.");
       }
 
-      hasSubmitted = false;
       if (note) {
         note.textContent = "Thanks. Your inquiry was sent successfully.";
       }
 
       contactForm.reset();
+    } catch (error) {
+      if (note) {
+        note.textContent = "Sorry, the inquiry could not be sent. Please email Jobeywankenobifitness@gmail.com directly.";
+      }
+    } finally {
       if (submitButton) {
         submitButton.disabled = false;
         submitButton.textContent = "Send inquiry";
       }
-    });
-  }
+    }
+  });
 }
