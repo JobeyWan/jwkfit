@@ -1,0 +1,22 @@
+{
+  "name": "jobey-wan-kenobi-fitness",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && vite build --mode development"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "^2.68.0",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "svelte": "^5.56.4",
+    "svelte-adapter-azure-swa": "^0.22.1",
+    "vite": "^8.1.0"
+  },
+  "dependencies": {
+    "nodemailer": "^9.0.1"
+  }
+}
