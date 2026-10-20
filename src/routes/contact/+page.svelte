@@ -54,7 +54,7 @@
     <p class="eyebrow">Book directly</p>
     <h2>Let&apos;s make your next season stronger.</h2>
     <ul class="contact-list">
-      <li><span>Email</span><a href="mailto:Jobeywankenobifitness@gmail.com">Jobeywankenobifitness@gmail.com</a></li>
+      <li><span>Email</span><a href="mailto: job.johnson@jwkfit.org">job.johnson@jwkfit.org</a></li>
       <li><span>Phone</span><a href="tel:+16025550145">(480) 307-3084</a></li>
       <li><span>Location</span><p>Phoenix, AZ and remote coaching</p></li>
     </ul>

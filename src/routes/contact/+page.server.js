@@ -2,26 +2,34 @@ import { env } from '$env/dynamic/private';
 import { fail } from '@sveltejs/kit';
 import nodemailer from 'nodemailer';
 
-const fallbackRecipient = 'Jobeywankenobifitness@gmail.com';
+const fallbackRecipient = 'job.johnson@jwkfit.org';
+
+function cleanEnvValue(value) {
+  return String(value || '')
+    .trim()
+    .replace(/^['"]|['"]$/g, '');
+}
 
 function getEmailConfig() {
   return {
-    user: (env.EMAIL_USER || env.GMAIL_USER || '').trim(),
-    pass: (env.EMAIL_PASS || env.GMAIL_APP_PASSWORD || '').replace(/\s/g, ''),
-    to: (env.TO_EMAIL || env.CONTACT_TO_EMAIL || fallbackRecipient).trim()
+    user: cleanEnvValue(env.EMAIL_USER || env.GMAIL_USER),
+    pass: cleanEnvValue(env.EMAIL_PASS || env.GMAIL_APP_PASSWORD).replace(/\s/g, ''),
+    to: cleanEnvValue(env.TO_EMAIL || env.CONTACT_TO_EMAIL || fallbackRecipient)
   };
 }
 
 function getMailErrorMessage(error) {
+  const diagnostic = error?.responseCode || error?.code || error?.command;
+
   if (error?.code === 'EAUTH') {
-    return 'Gmail rejected the login. Confirm 2-Step Verification is enabled and use a Gmail App Password without spaces.';
+    return `Gmail rejected the production login. Confirm Azure has the same Gmail App Password that worked locally. Diagnostic: ${diagnostic}.`;
   }
 
   if (error?.code === 'ETIMEDOUT' || error?.code === 'ESOCKET' || error?.command === 'CONN') {
-    return 'The email server could not be reached. Check your network or Azure outbound connection settings.';
+    return `Azure could not reach Gmail SMTP. Check Azure runtime/network logs. Diagnostic: ${diagnostic}.`;
   }
 
-  return 'Sorry, the inquiry could not be sent. Please email Jobeywankenobifitness@gmail.com directly.';
+  return `Sorry, the inquiry could not be sent. Please email job.johnson@jwkfit.org directly. Diagnostic: ${diagnostic || 'unknown'}.`;
 }
 
 export const actions = {
@@ -47,7 +55,7 @@ export const actions = {
       console.error('Missing email environment variables.');
       return fail(500, {
         values,
-        error: 'Email service is not configured yet. Please email Jobeywankenobifitness@gmail.com directly.'
+        error: 'Email service is not configured yet. Please email job.johnson@jwkfit.org directly.'
       });
     }
 
