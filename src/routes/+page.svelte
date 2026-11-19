@@ -1,38 +1,38 @@
 <svelte:head>
-  <title>Jobey Wan Kenobi Fitness | Personal Training</title>
+  <title>JWK Technologies | Websites, Apps & QA</title>
   <meta
     name="description"
-    content="Jobey Wan Kenobi Fitness offers modern personal training, strength coaching, and custom fitness programs built around real life."
+    content="JWK Technologies builds modern websites, custom apps, and thorough QA reviews that help products ship clean and confident."
   />
 </svelte:head>
 
 <section class="hero section">
   <div class="hero-copy reveal">
-    <p class="eyebrow">Private coaching for stronger bodies</p>
-    <h1>Training that looks refined and performs hard.</h1>
+    <p class="eyebrow">Tech services for growing products</p>
+    <h1>Websites, apps, and QA that ship with confidence.</h1>
     <p class="hero-text">
-      Premium personal training for busy professionals who want strength, stamina, and confidence without
-      noisy gimmicks or crowded gym guesswork.
+      JWK Technologies helps teams launch polished digital products: custom websites, purpose-built apps, and
+      rigorous QA reviews that catch issues before your users do.
     </p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="/contact">Book a consult</a>
-      <a class="btn btn-secondary" href="/pricing">View pricing</a>
+      <a class="btn btn-primary" href="/contact">Start a project</a>
+      <a class="btn btn-secondary" href="/pricing">View services</a>
     </div>
-    <div class="hero-stats" aria-label="Training highlights">
-      <div><strong>1:1</strong><span>Coaching</span></div>
-      <div><strong>30</strong><span>Day resets</span></div>
-      <div><strong>24/7</strong><span>Plan access</span></div>
+    <div class="hero-stats" aria-label="Service highlights">
+      <div><strong>Web</strong><span>Sites</span></div>
+      <div><strong>Apps</strong><span>Build</span></div>
+      <div><strong>QA</strong><span>Reviews</span></div>
     </div>
   </div>
-  <div class="hero-card reveal" aria-label="Featured training session">
+  <div class="hero-card reveal" aria-label="Featured delivery focus">
     <div class="glass-card">
       <span class="pulse-dot"></span>
-      <p>Today&apos;s Focus</p>
-      <h2>Strength + conditioning</h2>
+      <p>Current Focus</p>
+      <h2>Product delivery</h2>
       <ul>
-        <li>Dynamic warm-up</li>
-        <li>Progressive strength sets</li>
-        <li>Mobility cooldown</li>
+        <li>Discovery and scoping</li>
+        <li>Build and iteration</li>
+        <li>QA and launch polish</li>
       </ul>
     </div>
   </div>
@@ -40,36 +40,36 @@
 
 <section class="section split-section">
   <div class="section-copy reveal">
-    <p class="eyebrow">Method</p>
-    <h2>Simple systems. Serious results.</h2>
+    <p class="eyebrow">Services</p>
+    <h2>Clear builds. Clean releases.</h2>
   </div>
   <div class="feature-grid">
     <article class="feature-card reveal">
       <span>01</span>
-      <h3>Assess</h3>
-      <p>We start with movement, goals, schedule, and training history to build the right baseline.</p>
+      <h3>Website Creation</h3>
+      <p>Modern, fast, brand-forward sites built for clarity, conversion, and long-term maintainability.</p>
     </article>
     <article class="feature-card reveal">
       <span>02</span>
-      <h3>Train</h3>
-      <p>Every session is purposeful, paced, and adapted to how your body is performing that day.</p>
+      <h3>App Creation</h3>
+      <p>Custom web and product apps shaped around real workflows, clean architecture, and usable UI.</p>
     </article>
     <article class="feature-card reveal">
       <span>03</span>
-      <h3>Refine</h3>
-      <p>Weekly progress checks keep your program crisp, accountable, and sustainable.</p>
+      <h3>QA Reviews</h3>
+      <p>Structured testing and product reviews that surface bugs, UX gaps, and release risks early.</p>
     </article>
   </div>
 </section>
 
 <section class="section dark-panel reveal">
   <div>
-    <p class="eyebrow">Experience</p>
-    <h2>Designed for momentum.</h2>
+    <p class="eyebrow">Approach</p>
+    <h2>Designed to ship.</h2>
   </div>
   <p>
-    From first consult to every rep after, Jobey Wan Kenobi Fitness keeps the experience clean: smart
-    programming, clear communication, and a calm luxury feel that helps you show up consistently.
+    From kickoff to release, JWK Technologies keeps delivery clean: practical scoping, focused builds, clear
+    communication, and QA that protects quality without slowing momentum.
   </p>
-  <a class="btn btn-light" href="/about">Meet your coach</a>
+  <a class="btn btn-light" href="/about">Learn more</a>
 </section>

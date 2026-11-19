@@ -1,64 +1,64 @@
 <svelte:head>
-  <title>Pricing | Jobey Wan Kenobi Fitness</title>
+  <title>Pricing | JWK Technologies</title>
   <meta
     name="description"
-    content="Explore Jobey Wan Kenobi Fitness personal training packages and pricing options."
+    content="Explore JWK Technologies pricing for website creation, app development, and QA product reviews."
   />
 </svelte:head>
 
 <section class="page-hero section reveal">
   <p class="eyebrow">Pricing</p>
-  <h1>Pick the training rhythm that fits your life.</h1>
-  <p>Start with a focused reset, commit to weekly coaching, or choose the premium transformation experience.</p>
+  <h1>Pick the engagement that fits your product.</h1>
+  <p>Start with a focused build, commit to ongoing product work, or bring us in for a deep QA review.</p>
 </section>
 
 <section class="section pricing-grid">
   <article class="price-card reveal">
-    <p class="eyebrow">Starter</p>
-    <h2>Foundation</h2>
-    <p class="price">$100<span>/session</span></p>
+    <p class="eyebrow">Websites</p>
+    <h2>Site Launch</h2>
+    <p class="price">$1,500<span>/project</span></p>
     <ul>
-      <li>One 60-minute private session</li>
-      <li>Movement assessment</li>
-      <li>Personal workout notes</li>
-      <li>Best for first-time clients</li>
+      <li>Custom multi-page website</li>
+      <li>Responsive design and polish</li>
+      <li>Contact form and basic SEO setup</li>
+      <li>Best for new brands and landing sites</li>
     </ul>
     <a class="btn btn-secondary" href="/contact">Get started</a>
   </article>
 
   <article class="price-card featured-price reveal">
     <div class="badge">Most Popular</div>
-    <p class="eyebrow">Performance</p>
-    <h2>Momentum</h2>
-    <p class="price">$350<span>/month</span></p>
+    <p class="eyebrow">Apps</p>
+    <h2>Product Build</h2>
+    <p class="price">$4,500<span>/project</span></p>
     <ul>
-      <li>Four private sessions per month</li>
-      <li>Custom strength program</li>
-      <li>Weekly progress check-ins</li>
-      <li>App-based workout access</li>
+      <li>Custom web or product app</li>
+      <li>Feature scoping and architecture</li>
+      <li>UI implementation and iteration</li>
+      <li>Launch support and documentation</li>
     </ul>
-    <a class="btn btn-primary" href="/contact">Reserve a spot</a>
+    <a class="btn btn-primary" href="/contact">Start building</a>
   </article>
 
   <article class="price-card reveal">
-    <p class="eyebrow">Elite</p>
-    <h2>Transformation</h2>
-    <p class="price">$700<span>/month</span></p>
+    <p class="eyebrow">QA</p>
+    <h2>Product Review</h2>
+    <p class="price">$750<span>/review</span></p>
     <ul>
-      <li>Eight private sessions per month</li>
-      <li>Nutrition habit coaching</li>
-      <li>Priority scheduling</li>
-      <li>Detailed monthly review</li>
+      <li>Structured functional testing</li>
+      <li>UX and edge-case review</li>
+      <li>Prioritized issue report</li>
+      <li>Release-readiness recommendations</li>
     </ul>
-    <a class="btn btn-secondary" href="/contact">Apply now</a>
+    <a class="btn btn-secondary" href="/contact">Book a review</a>
   </article>
 </section>
 
 <section class="section faq-section reveal">
   <p class="eyebrow">Good to know</p>
-  <h2>All plans begin with a quick consult.</h2>
+  <h2>Every engagement starts with a short consult.</h2>
   <p>
-    Packages can be adjusted for couples, small groups, competition prep, or remote coaching. Final
-    pricing is confirmed after your consultation.
+    Packages can be adjusted for redesigns, ongoing retainers, mobile-first apps, or multi-release QA
+    cycles. Final pricing is confirmed after scoping your goals and timeline.
   </p>
 </section>

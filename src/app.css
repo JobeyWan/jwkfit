@@ -24,12 +24,8 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(135deg, rgba(247, 255, 252, 0.56) 0%, rgba(234, 247, 243, 0.5) 42%, rgba(215, 238, 230, 0.62) 100%),
-    radial-gradient(circle at 76% 26%, rgba(31, 199, 182, 0.18), transparent 18rem),
-    url("/assets/desert-trail.png") right 3rem top 7rem / min(46vw, 560px) auto no-repeat fixed,
-    url("/assets/mountain-field.png") center top / cover no-repeat fixed,
-    radial-gradient(circle at top left, rgba(31, 199, 182, 0.26), transparent 34rem),
-    linear-gradient(135deg, #f7fffc 0%, var(--bg) 42%, #d7eee6 100%);
+    linear-gradient(135deg, rgba(247, 255, 252, 0.42) 0%, rgba(234, 247, 243, 0.36) 42%, rgba(215, 238, 230, 0.48) 100%),
+    url("/assets/jwk-background.jpg") center / cover no-repeat fixed;
   color: var(--ink);
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.5;

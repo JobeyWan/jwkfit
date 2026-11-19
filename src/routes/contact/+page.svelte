@@ -3,16 +3,16 @@
 </script>
 
 <svelte:head>
-  <title>Contact | Jobey Wan Kenobi Fitness</title>
-  <meta name="description" content="Contact Jobey Wan Kenobi Fitness to book a personal training consultation." />
+  <title>Contact | JWK Technologies</title>
+  <meta name="description" content="Contact JWK Technologies to start a website, app, or QA review project." />
 </svelte:head>
 
 <section class="page-hero section reveal">
   <p class="eyebrow">Contact</p>
-  <h1>Ready for a stronger routine?</h1>
+  <h1>Ready to ship something better?</h1>
   <p>
-    Send a quick note with your goals and preferred schedule. Jobey Wan Kenobi Fitness will follow up to
-    book a consultation.
+    Send a quick note with your project goals and timeline. JWK Technologies will follow up to schedule a
+    consult.
   </p>
 </section>
 
@@ -27,18 +27,18 @@
       <input type="email" name="email" placeholder="you@example.com" value={form?.values?.email || ''} required />
     </label>
     <label>
-      Training Goal
+      Project Type
       <select name="goal" value={form?.values?.goal || ''} required>
-        <option value="">Select a goal</option>
-        <option>Build strength</option>
-        <option>Lose body fat</option>
-        <option>Improve athletic performance</option>
-        <option>Move and feel better</option>
+        <option value="">Select a service</option>
+        <option>Website creation</option>
+        <option>App creation</option>
+        <option>QA product review</option>
+        <option>Ongoing product support</option>
       </select>
     </label>
     <label>
       Message
-      <textarea name="message" rows="5" placeholder="Tell us what you want to accomplish">{form?.values?.message || ''}</textarea>
+      <textarea name="message" rows="5" placeholder="Tell us what you want to build or review">{form?.values?.message || ''}</textarea>
     </label>
     <button class="btn btn-primary" type="submit">Send inquiry</button>
     {#if form?.success}
@@ -52,11 +52,11 @@
 
   <aside class="contact-card reveal">
     <p class="eyebrow">Book directly</p>
-    <h2>Let&apos;s make your next season stronger.</h2>
+    <h2>Let&apos;s shape your next release.</h2>
     <ul class="contact-list">
-      <li><span>Email</span><a href="mailto: job.johnson@jwkfit.org">job.johnson@jwkfit.org</a></li>
-      <li><span>Phone</span><a href="tel:+16025550145">(480) 307-3084</a></li>
-      <li><span>Location</span><p>Phoenix, AZ and remote coaching</p></li>
+      <li><span>Email</span><a href="mailto:job.johnson@jwkfit.org">job.johnson@jwkfit.org</a></li>
+      <li><span>Phone</span><a href="tel:+14803073084">(480) 307-3084</a></li>
+      <li><span>Location</span><p>Phoenix, AZ and remote delivery</p></li>
     </ul>
   </aside>
 </section>

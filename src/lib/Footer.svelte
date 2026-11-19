@@ -3,6 +3,6 @@
 </script>
 
 <footer class="site-footer">
-  <p>&copy; {year} Jobey Wan Kenobi Fitness. Built for strength, speed, and style.</p>
-  <a href="/contact">Start training</a>
+  <p>&copy; {year} JWK Technologies. Built for websites, apps, and quality releases.</p>
+  <a href="/contact">Start a project</a>
 </footer>
