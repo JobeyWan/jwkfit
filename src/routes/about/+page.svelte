@@ -1,17 +1,18 @@
 <svelte:head>
-  <title>About | JWK Technologies</title>
+  <title>About | JWK Technologies and Fitness</title>
   <meta
     name="description"
-    content="Learn about JWK Technologies tech services for website creation, app development, and QA product reviews."
+    content="Learn about JWK Technologies and Fitness personal fitness training for hiking, strength, and longevity, plus website, app, and QA services."
   />
 </svelte:head>
 
 <section class="page-hero section reveal">
-  <p class="eyebrow">About JWK Technologies</p>
-  <h1>Tech services built for clarity, quality, and launch readiness.</h1>
+  <p class="eyebrow">About JWK Technologies and Fitness</p>
+  <h1>Performance coaching and digital delivery, side by side.</h1>
   <p>
-    JWK Technologies helps founders and teams turn ideas into dependable digital products. The focus is practical:
-    ship websites and apps that look sharp, work well, and hold up under real use.
+    Personal fitness training with a specialization in performance enhancement for hiking,
+    weightlifting, and overall longevity — paired with website creation, app development, and QA
+    reviews that help products ship with confidence.
   </p>
 </section>
 
@@ -20,26 +21,28 @@
     <div class="portrait-frame">
       <span>JWK</span>
     </div>
-    <p>Website creation, app development, product QA, and release-ready delivery support.</p>
+    <p>1:1 training, virtual programs, outdoor adventures, nutrition guidance, websites, apps, and QA.</p>
   </div>
   <div class="story-card reveal">
     <p class="eyebrow">Philosophy</p>
-    <h2>Software should feel clear, useful, and reliable.</h2>
+    <h2>Train and build with a science-based approach.</h2>
     <p>
-      Most teams do not need more noise. They need focused execution, thoughtful UX, and testing that
-      protects the release. JWK Technologies turns product goals into clean builds you can maintain and grow.
+      Most people do not need more noise. They need focused coaching, clear systems, and work that
+      fits real life. JWK Technologies and Fitness uses a science-based approach to help clients train smarter
+      and harder — and to help teams ship digital products that hold up under real use.
     </p>
-    <p>Expect clear communication, careful implementation, and QA that improves confidence before launch.</p>
+    <p>Expect practical programming, careful implementation, and quality standards that protect progress.</p>
   </div>
 </section>
 
 <section class="section experience-section">
   <div class="section-copy reveal">
-    <p class="eyebrow">What we deliver</p>
-    <h2>Built for real products, reviewed for real users.</h2>
+    <p class="eyebrow">Experience in motion</p>
+    <h2>Built in the gym, tested on the trail.</h2>
     <p>
-      From marketing sites to product apps and QA walkthroughs, JWK Technologies supports the full path from idea
-      to polished release.
+      Trail-tested conditioning, heavy strength work, and longevity-minded coaching come together to
+      help clients build capable, confident bodies — then carry that same standard into digital
+      product work.
     </p>
     <a
       class="btn btn-primary youtube-link"
@@ -53,26 +56,30 @@
   <div class="media-grid">
     <article class="media-card image-card wide-card reveal">
       <img
-        src="/assets/jwk-background.jpg"
-        alt="JWK Technologies mountain logo brand mark"
+        src="/assets/jobey-mountain-flex.png"
+        alt="Jobey posing by an alpine lake and mountain backdrop"
       />
       <div>
-        <span>Brand</span>
-        <h3>Modern digital work with a clear identity.</h3>
+        <span>YouTube</span>
+        <h3>Follow the training, trail work, and fitness lifestyle.</h3>
       </div>
     </article>
     <article class="media-card tall-card reveal">
-      <img src="/assets/jwk-background.jpg" alt="Website and app delivery representation" />
+      <video autoplay loop muted playsinline preload="metadata" aria-label="Outdoor trail conditioning session">
+        <source src="/assets/trail-conditioning.mp4" type="video/mp4" />
+      </video>
       <div>
-        <span>Build</span>
-        <h3>Websites and apps designed to perform.</h3>
+        <span>Conditioning</span>
+        <h3>Endurance that carries into real life.</h3>
       </div>
     </article>
     <article class="media-card reveal">
-      <img src="/assets/jwk-background.jpg" alt="QA and product review representation" />
+      <video autoplay loop muted playsinline preload="metadata" aria-label="Heavy strength training session">
+        <source src="/assets/heavy-metal-strength.mp4" type="video/mp4" />
+      </video>
       <div>
-        <span>QA</span>
-        <h3>Product reviews that catch issues early.</h3>
+        <span>Strength</span>
+        <h3>Heavy work, sharp focus, stronger standards.</h3>
       </div>
     </article>
   </div>
@@ -80,18 +87,18 @@
 
 <section class="section values-grid">
   <article class="feature-card reveal">
-    <span>Clarity</span>
-    <h3>Every feature has a reason.</h3>
-    <p>Work is scoped around goals, users, and what actually needs to ship next.</p>
+    <span>Training</span>
+    <h3>Performance with longevity in mind.</h3>
+    <p>Hiking, weightlifting, and sustainable habits built through personal and virtual coaching.</p>
   </article>
   <article class="feature-card reveal">
-    <span>Quality</span>
+    <span>Build</span>
+    <h3>Websites and apps that perform.</h3>
+    <p>Custom digital products scoped around goals, users, and what actually needs to ship next.</p>
+  </article>
+  <article class="feature-card reveal">
+    <span>QA</span>
     <h3>Release readiness stays visible.</h3>
-    <p>QA reviews and feedback loops catch defects, UX friction, and edge cases before launch.</p>
-  </article>
-  <article class="feature-card reveal">
-    <span>Momentum</span>
-    <h3>You know what is happening.</h3>
-    <p>Progress stays transparent so decisions are fast and delivery stays on track.</p>
+    <p>Product reviews catch defects, UX friction, and edge cases before launch.</p>
   </article>
 </section>

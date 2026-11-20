@@ -45,7 +45,7 @@ export const actions = {
     if (!values.name || !values.email || !values.goal) {
       return fail(400, {
         values,
-        error: 'Please include your name, email, and project type.'
+        error: 'Please include your name, email, and interest.'
       });
     }
 
@@ -72,14 +72,14 @@ export const actions = {
 
     try {
       await transporter.sendMail({
-        from: `"JWK Technologies" <${emailConfig.user}>`,
+        from: `"JWK Technologies and Fitness" <${emailConfig.user}>`,
         to: emailConfig.to,
         replyTo: values.email,
-        subject: `New Project Inquiry from ${values.name}`,
+        subject: `New Inquiry from ${values.name}`,
         text: [
           `Name: ${values.name}`,
           `Email: ${values.email}`,
-          `Project Type: ${values.goal}`,
+          `Interest: ${values.goal}`,
           '',
           'Message:',
           values.message || 'No additional message provided.'

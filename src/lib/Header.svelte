@@ -16,9 +16,9 @@
 <svelte:body class:nav-open={isOpen} />
 
 <header class="site-header">
-  <a class="brand" href="/" aria-label="JWK Technologies home" on:click={() => (isOpen = false)}>
+  <a class="brand" href="/" aria-label="JWK Technologies and Fitness home" on:click={() => (isOpen = false)}>
     <span class="brand-mark">JW</span>
-    <span>JWK Technologies</span>
+    <span>JWK Technologies and Fitness</span>
   </a>
   <button
     class="nav-toggle"

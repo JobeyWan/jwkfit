@@ -1,38 +1,38 @@
 <svelte:head>
-  <title>JWK Technologies | Websites, Apps & QA</title>
+  <title>JWK Technologies and Fitness | Training & Tech</title>
   <meta
     name="description"
-    content="JWK Technologies builds modern websites, custom apps, and thorough QA reviews that help products ship clean and confident."
+    content="JWK Technologies and Fitness offers personal fitness training for hiking, strength, and longevity, plus website creation, app development, and QA reviews."
   />
 </svelte:head>
 
 <section class="hero section">
   <div class="hero-copy reveal">
-    <p class="eyebrow">Tech services for growing products</p>
-    <h1>Websites, apps, and QA that ship with confidence.</h1>
+    <p class="eyebrow">Training and tech under one roof</p>
+    <h1>Stronger bodies. Sharper digital products.</h1>
     <p class="hero-text">
-      JWK Technologies helps teams launch polished digital products: custom websites, purpose-built apps, and
-      rigorous QA reviews that catch issues before your users do.
+      Personal fitness coaching for hiking performance, weightlifting, and longevity — plus website
+      creation, app development, and QA reviews that help products ship clean and confident.
     </p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="/contact">Start a project</a>
+      <a class="btn btn-primary" href="/contact">Book a consult</a>
       <a class="btn btn-secondary" href="/pricing">View services</a>
     </div>
     <div class="hero-stats" aria-label="Service highlights">
+      <div><strong>1:1</strong><span>Training</span></div>
       <div><strong>Web</strong><span>Sites</span></div>
-      <div><strong>Apps</strong><span>Build</span></div>
       <div><strong>QA</strong><span>Reviews</span></div>
     </div>
   </div>
-  <div class="hero-card reveal" aria-label="Featured delivery focus">
+  <div class="hero-card reveal" aria-label="Featured focus">
     <div class="glass-card">
       <span class="pulse-dot"></span>
       <p>Current Focus</p>
-      <h2>Product delivery</h2>
+      <h2>Performance + delivery</h2>
       <ul>
-        <li>Discovery and scoping</li>
-        <li>Build and iteration</li>
-        <li>QA and launch polish</li>
+        <li>Science-based training</li>
+        <li>Website and app builds</li>
+        <li>QA before launch</li>
       </ul>
     </div>
   </div>
@@ -40,7 +40,31 @@
 
 <section class="section split-section">
   <div class="section-copy reveal">
-    <p class="eyebrow">Services</p>
+    <p class="eyebrow">Fitness</p>
+    <h2>Train smarter for the trail, the gym, and longevity.</h2>
+  </div>
+  <div class="feature-grid">
+    <article class="feature-card reveal">
+      <span>01</span>
+      <h3>1:1 Sessions</h3>
+      <p>In-person coaching built around performance enhancement, form, and real-life consistency.</p>
+    </article>
+    <article class="feature-card reveal">
+      <span>02</span>
+      <h3>Virtual Programs</h3>
+      <p>Remote training plans with clear progressions for hiking, strength, and long-term health.</p>
+    </article>
+    <article class="feature-card reveal">
+      <span>03</span>
+      <h3>Outdoor Adventures</h3>
+      <p>Hiking and camping experiences that turn conditioning into something you can actually use outside.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section split-section">
+  <div class="section-copy reveal">
+    <p class="eyebrow">Tech services</p>
     <h2>Clear builds. Clean releases.</h2>
   </div>
   <div class="feature-grid">
@@ -65,11 +89,12 @@
 <section class="section dark-panel reveal">
   <div>
     <p class="eyebrow">Approach</p>
-    <h2>Designed to ship.</h2>
+    <h2>Work smarter. Deliver better.</h2>
   </div>
   <p>
-    From kickoff to release, JWK Technologies keeps delivery clean: practical scoping, focused builds, clear
-    communication, and QA that protects quality without slowing momentum.
+    Whether the goal is a stronger body or a stronger product, JWK Technologies and Fitness keeps the process
+    practical: science-based coaching, focused builds, clear communication, and quality checks that
+    protect progress.
   </p>
   <a class="btn btn-light" href="/about">Learn more</a>
 </section>

@@ -3,6 +3,6 @@
 </script>
 
 <footer class="site-footer">
-  <p>&copy; {year} JWK Technologies. Built for websites, apps, and quality releases.</p>
-  <a href="/contact">Start a project</a>
+  <p>&copy; {year} JWK Technologies and Fitness. Coaching, websites, apps, and QA.</p>
+  <a href="/contact">Book a consult</a>
 </footer>
